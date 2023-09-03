@@ -34,11 +34,11 @@ body{
 .container{
     margin: 0;
     padding: 0;
-    max-width: 1580px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;   
 }
 
 
@@ -47,6 +47,7 @@ nav{
     top: 0;
     background-color: var(--BGCOLOR);
     width: 100%;
+    max-width: 1550px;
     display: flex;
     height: auto;
     flex-wrap: wrap;
@@ -670,6 +671,12 @@ width: 70%;
 
 }
 
+.feedback{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .feedback .feedback-container{
     display: flex;
     margin: 0 6rem;
@@ -765,6 +772,8 @@ footer{
     width: 100%;
     margin-top: 8rem;
     padding: 2rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 footer main{
@@ -946,3 +955,43 @@ footer section .text{
 }
 
 
+
+section,main,nav{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+      font-size: 10px;
+    }
+
+    .container{
+        max-width: 768px;
+    }
+
+    section{
+        flex-direction: column;
+
+    }
+
+    section div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    main{
+        flex-direction: column;
+
+    }
+    main div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+  }
