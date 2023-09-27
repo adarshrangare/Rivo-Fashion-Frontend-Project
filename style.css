@@ -58,7 +58,7 @@ nav{
     }
 
 .logo{    
-        font-family: 'Elephant', sans-serif;
+        font-family: Elephant, sans-serif;
         color: #224F34;
         font-size: 2.5rem;
         font-weight: 400;
@@ -257,15 +257,16 @@ right: -7%;
 }
 
 
-.top-products,.our-products,.choices{
+.top-products,.our-products,.choices,.feedback{
     display: flex;
     flex-direction: column;
     padding: 3rem 4rem;
     gap: 2.5rem;
     align-items: center;
+    width:100%;
 }
 
-.top-products h1,.our-products h1,.choices h1{
+.top-products h1,.our-products h1,.choices h1,.feedback h1{
 
     color: var(--PrimaryCLR);
     font-family: Roboto Slab;
@@ -522,5 +523,341 @@ right: -7%;
         box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.399);
         font-size: 1.3rem;
     }
+
     
+  
+    /* <!-- ###################### Choices ############################################### -->
+      */
+        .choices-list{
+            display:flex;
+            justify-content: space-around;
+            width:100%;
+            margin-bottom: 3rem;
+        }
+
+        .choice-container{
+            width:350px;
+
+        }
+        
+        .choice-container .image-container{
+            width:350px;
+            height: 460px;
+        }
+        
+        .choice-container .image-container img{
+            width: 100%;
+            height: 100%;
+        }
+
+     .choice-container .title-summary h1{
+        color: #373737;
+        font-family: Poppins;
+        font-size: 1.875rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 1rem;
+     } 
+
+     .choice-container .title-summary p{
+        color: #373737;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 143%; /* 1.96625rem */
+     }
+
+/* 
+     <!-- ###################### feedback ############################################### -->
+         */
+
+         .feedback{
+            max-width: 1440px;
+            width: 100%;
+            
+        }
+        
+        .feedback .feedback-container{
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+            
+        }
+        
+        .feedback-container article{
+            padding: 1.5rem;
+            border-radius: 0.1875rem;
+            background: #FFF;
+            box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            max-width: 24.125rem;
+            height: 16.8125rem;
+            flex-shrink: 0;
+            text-wrap: wrap;
+            
+            
+        }
+        
+        .feedback-container article:nth-child(even){
+            background: var(--BGCOLOR);
+        }
+        
+        .feedback-container article h1{
+            color: var(--PrimaryCLR);
+            font-family: 'Arial Rounded MT Bold';
+            font-size: 3rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        
+        }
+        
+        .feedback-container article h2{
+        
+        color: var(--PrimaryCLR);
+        color: #224F34;
+        font-family: Roboto Serif;
+        font-size: 1.375rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+        }
+        
+        .feedback-container article p{
+        margin-top: 1rem;
+        color: var(--PrimaryCLR);
+        font-family: Poppins;
+        font-size: .9rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+        
+        }
+        
+        .feedback .buttons{
+            
+            display: flex;
+            gap: 2rem;
+        
+        }
+        
+        .feedback .buttons span{
+        
+            display: block;
+            box-sizing: border-box;
+            box-shadow: 0 7px 30px 0 rgba(0, 0, 0, 0.15);
+            font-size: 1.5rem;
+            color: var(--PrimaryCLR);
+            cursor: pointer;
+        }
+        .feedback .buttons span:nth-child(2){
+        
+            background-color: var(--BGCOLOR);
+        
+        }      
+        
+/*         
+
+        <!-- ###################### footer ############################################### -->
+          */
+
+
+
+ footer{
+            position: relative;
+            bottom: 0;
+            background-color: var(--PrimaryCLR);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1440px;
+            margin-top: 8rem;
+            padding: 2rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+
+footer .main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 6rem 2rem 6rem;
+
+}
+
+footer .main .social-media{
+    display: flex;
+    flex-direction:column;
+    margin-left: 2rem;
+    gap:1rem;
+    margin-right:3rem
+}
+
+footer .main .social-media h1{
+    color: #FFF;
+    font-family: Elephant;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+footer .main h4{
+    color: #FFF;
+    font-family: Roboto Slab;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+footer .main .social-media .icons{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+footer .main .links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items:center;
+}
+
+.left-col, .right-col{
+
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap:1rem;
+    color: #FFF;
+    font-family: Roboto Slab;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+.left-col ul, .right-col ul {
+    display: flex;
+    flex-direction: column;
+}
+.left-col ul li, .right-col ul li  {
+   
+    color: #C2EFD4;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+
+
+footer .main .links div form{
+    display: flex;
+    margin-top: 2rem;
+    /* width: 500px; */
+}
+
+footer .main .links div input{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: var(--PrimaryCLR);
+    color: var(--BGCOLOR);
+    padding: .5rem;
+    padding-left: 1.5rem;
+    border-radius: 0.1875rem;
+    border: 2px solid #A3F3BE;
+    width: 20rem;
+}
+
+footer .main .links div input[type="button"]{
+    margin-left: -.2rem ;
+    background-color: var(--BGCOLOR);
+    color: var(--PrimaryCLR);
+    width: 10rem;
+    padding: .5rem;
+    padding-left:0 ;
+    border-radius: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 0 .1875rem .1875rem 0;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+input[type="email"]:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--BGCOLOR);
+}
+
+input[type="email"]:focus::placeholder{
+    color: transparent;
+}
+
+
+
+
+footer .main .links div input[type="button"]:active{
+    box-shadow: inset.5px .5px 5px 1px #224f3468;
+    border: 2px solid var(--BGCOLOR);
+    font-size: .95rem;
+}
+
+
+footer section{
+
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+footer section .line{
+    width: 70%;
+    fill: var(--BGCOLOR);
+    color: var(--BGCOLOR);
+    
+}
+
+footer section .text{
+    display: flex;
+    gap: 2rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
 
