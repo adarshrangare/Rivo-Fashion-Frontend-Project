@@ -24,7 +24,7 @@
 .container{
     max-width: 1440px;
     margin: auto;
-    /* min-width: 100vw; */
+    
 }
 
 body{
@@ -861,3 +861,13 @@ footer section .text{
 
 
 
+/* Responsive Mobile  ################################################################## */
+
+
+@media only screen and (max-width:600px){
+
+    body{
+        /* background-color: red; */
+    }
+
+}
